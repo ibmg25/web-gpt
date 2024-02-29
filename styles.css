@@ -1,0 +1,27 @@
+/* styles.css */
+body {
+    padding-top: 70px; /* Ajusta el contenido para que no esté detrás de la barra de navegación */
+}
+
+section {
+    padding: 60px 0; /* Espacio entre secciones */
+}
+
+/* Estilos adicionales para el formulario de contacto */
+#contact form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#contact form label {
+    font-weight: bold;
+}
+
+#contact form textarea {
+    resize: none;
+}
+
+#contact form button {
+    margin-top: 15px;
+}

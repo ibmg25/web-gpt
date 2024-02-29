@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionales para la sección Acerca */
+        #about .row {
+            align-items: center;
+        }
+
+        #about .col {
+            text-align: center;
+        }
+
+        #about img {
+            display: block;
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Estilos adicionales para la sección Habilidades */
+        #skills {
+            text-align: center;
+        }
+
+        #skills .row {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        #skills img {
+            max-width: 180px;
+            margin-bottom: 10px;
+        }
+
+        #skills .col {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Estilos adicionales para la sección Portafolio */
+        #portfolio {
+            text-align: center;
+        }
+
+        #portfolio .row {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        #portfolio img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección: Acerca de mí -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Boris Martinez</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida justo at lectus finibus,
+                        vel aliquet lectus dapibus. Proin pharetra risus a arcu vestibulum, sit amet consequat
+                        velit scelerisque. Nullam quis consequat tortor. In hac habitasse platea dictumst. Maecenas
+                        tempus turpis sed sem vehicula, nec malesuada lorem malesuada. Donec sit amet pharetra
+                        tellus. Vestibulum bibendum nunc a fermentum venenatis. Integer dapibus tortor et dui
+                        lobortis, quis laoreet magna faucibus. Vivamus non lacus lacinia, blandit urna sed, feugiat
+                        magna. Nulla facilisi.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="me.png" alt="Boris Martinez" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Habilidades -->
+    <section id="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="habilidad1.png" alt="Habilidad 1">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>C++</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida justo at lectus
+                                finibus, vel aliquet lectus dapibus.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                                Ver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="habilidad2.png" alt="Habilidad 2">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Java</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida justo at lectus
+                                finibus, vel aliquet lectus dapibus.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
+                                Ver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="habilidad3.png" alt="Habilidad 3">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Python</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida justo at lectus
+                                finibus, vel aliquet lectus dapibus.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
+                                Ver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Portafolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="mb-4">Portafolio</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="proyecto1.png" alt="Proyecto 1">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Proyecto 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida justo at lectus
+                                finibus, vel aliquet lectus dapibus.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">
+                                Ver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="proyecto2.png" alt="Proyecto 2">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Proyecto 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida justo at lectus
+                                finibus, vel aliquet lectus dapibus.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal5">
+                                Ver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="proyecto3.png" alt="Proyecto 3">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Proyecto 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida justo at lectus
+                                finibus, vel aliquet lectus dapibus.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal6">
+                                Ver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Contacto -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="mb-4">Contacto</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal para cada habilidad -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">C++</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Descripción detallada de C++.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Java</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Descripción detallada de Java.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">Python</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Descripción detallada de Python.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para cada proyecto del Portafolio -->
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal4Label">Proyecto 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Descripción detallada del Proyecto 1.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal5Label">Proyecto 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Descripción detallada del Proyecto 2.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal6Label">Proyecto 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Descripción detallada del Proyecto 3.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, jQuery y Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
